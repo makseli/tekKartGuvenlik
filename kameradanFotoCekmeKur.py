@@ -18,7 +18,7 @@ print(bcolors.OKGREEN+" \n \n fswebcam kuruldu !\n"+bcolors.ENDC)
 
 metin = """
 #!/bin/bash
-DATE=$(date +"%Y-%m-%d_%H%M")
+DATE=$(date +"%Y-%m-%d_%H%M%S")
 fswebcam -r 1280x720 --no-banner /home/pi/Desktop/$DATE.jpg
 """
 
