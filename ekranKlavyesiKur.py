@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
+
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -19,8 +22,9 @@ matchbox-keyboard
 
 import os;
 os.getcwd()
-VHostDosya = open("/home/pi/Desktop/klavye_calistir.conf", "x")
+VHostDosya = open("/home/pi/Desktop/klavye_calistir.conf", "w")
 VHostDosya.write(metin)
 VHostDosya.close();
 
 print(bcolors.OKBLUE+"yeni kısayol dosyası masaüstünde olusturuldu !\n"+bcolors.ENDC)
+exit();
