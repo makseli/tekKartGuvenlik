@@ -27,5 +27,7 @@ VHostDosya = open("/home/pi/Desktop/klavye_calistir.sh", "w")
 VHostDosya.write(metin)
 VHostDosya.close();
 
+os.system("sudo chmod +x /home/pi/Desktop/klavye_calistir.sh ")
+
 print(bcolors.OKBLUE+" \n yeni kısayol dosyası masaüstünde olusturuldu ! \n \n"+bcolors.ENDC)
 exit();
