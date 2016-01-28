@@ -11,6 +11,7 @@ class bcolors:
 print(bcolors.FAIL+" \n LUTFEN yeniSite.py dosyasini SUDO izni ile calistirdiginiza emin olunuz  \n"+bcolors.ENDC)
 print(bcolors.OKBLUE+" \n LUTFEN yeniSite.py dosyasini SUDO izni ile calistirdiginiza emin olunuz  \n"+bcolors.ENDC)
 
+import os;
 os.system("sudo apt-get install -y matchbox-keyboard")
 
 print(bcolors.OKGREEN+" matchbox-keyboard kuruldu !\n"+bcolors.ENDC)
@@ -20,7 +21,7 @@ metin = """
 matchbox-keyboard
 """
 
-import os;
+
 os.getcwd()
 VHostDosya = open("/home/pi/Desktop/klavye_calistir.conf", "w")
 VHostDosya.write(metin)
