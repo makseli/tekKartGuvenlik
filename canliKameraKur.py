@@ -17,10 +17,22 @@ os.system("sudo apt-get install -y motion")
 print(bcolors.OKGREEN+" \n \n motion kuruldu !\n"+bcolors.ENDC)
 
 os.system("sudo mv /etc/motion/motion.conf /etc/motion/motion.conf_old ")
+os.system("sudo mv /etc/default/motion /etc/default/motion_old ")
 
 os.system("sudo cp motion.conf /etc/motion/motion.conf ")
 
+
+metin = """
+# set to 'yes' to enable the motion daemon
+start_motion_daemon=yes
+"""
+
+os.getcwd()
+VHostDosya = open("/etc/default/motion", "w")
+VHostDosya.write(metin)
+VHostDosya.close();
+
 os.system("sudo service motion start")
 
-print(bcolors.OKBLUE+" \n işlem tamam ! \n \n"+bcolors.ENDC)
+print(bcolors.OKBLUE+" \n servis ve konfigürasyon ayarlama işlemi tamam ! \n \n"+bcolors.ENDC)
 exit();
