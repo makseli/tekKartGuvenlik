@@ -12,6 +12,7 @@ print(bcolors.FAIL+" \n LUTFEN bu dosyayı SUDO izni ile calistirdiginiza emin o
 print(bcolors.OKBLUE+" \n LUTFEN bu dosyayı SUDO izni ile calistirdiginiza emin olunuz  \n"+bcolors.ENDC)
 
 import os;
+os.system("sudo apt-get update")
 os.system("sudo apt-get install -y fswebcam")
 
 print(bcolors.OKGREEN+" \n \n fswebcam kuruldu !\n"+bcolors.ENDC)

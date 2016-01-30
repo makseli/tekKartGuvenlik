@@ -8,10 +8,11 @@ class bcolors:
     WARNING = '\033[93m'
     FAIL = '\033[91m'
     ENDC = '\033[0m'
-print(bcolors.FAIL+" \n LUTFEN bu dosyayı SUDO izni ile calistirdiginiza emin olunuz. ( Whezy sürümü önerilir )  \n"+bcolors.ENDC)
-print(bcolors.OKBLUE+" \n LUTFEN bu dosyayı SUDO izni ile calistirdiginiza emin olunuz. ( Whezy sürümü önerilir )  \n"+bcolors.ENDC)
+print(bcolors.FAIL+" \n LUTFEN bu dosyayı SUDO izni ile calistirdiginiza emin olunuz. ( Raspian Whezy sürümü önerilir )  \n"+bcolors.ENDC)
+print(bcolors.OKBLUE+" \n LUTFEN bu dosyayı SUDO izni ile calistirdiginiza emin olunuz. ( Raspian Whezy sürümü önerilir )  \n"+bcolors.ENDC)
 
 import os;
+os.system("sudo apt-get update")
 os.system("sudo apt-get install -y motion")
 
 print(bcolors.OKGREEN+" \n \n motion kuruldu !\n"+bcolors.ENDC)
